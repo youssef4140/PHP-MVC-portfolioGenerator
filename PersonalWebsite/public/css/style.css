@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+}
+
+*::-moz-selection {
+  background-color: #000;
+  color: #ffcc0d;
+}
+
+*::selection {
+  background-color: #000;
+  color: #ffcc0d;
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffcc0d;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html body {
+  overflow: hidden;
+  transition: 0.2s linear !important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: -35rem;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 0.7rem solid #000;
+  width: 35rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: 0.2s linear !important;
+  text-align: center;
+}
+.header #menu-btn {
+  position: absolute;
+  top: 0;
+  right: -5.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+.header .logo {
+  text-transform: uppercase;
+  border-bottom: 0.7rem solid #000;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.header .navbar {
+  width: 100%;
+}
+.header .navbar a {
+  display: block;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  margin: 0.5rem;
+}
+.header .navbar a .active, .header .navbar a:hover {
+  background-color: #ffcc0d;
+  color: #fff;
+}
+.header .follow a {
+  font-size: 3rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.6s ease-in-out !important;
+}
+.header .follow a:hover {
+  transform: rotate(360deg);
+}
+
+.h-active {
+  left: 0;
+}
+
+.b-active {
+  padding-left: 35rem;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .b-active {
+    padding-left: 0;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .h-active {
+    padding-top: 7rem;
+  }
+  #menu-btn.fa-times {
+    right: 0;
+  }
+  .home .image img {
+    width: 100%;
+    height: auto;
+  }
+  .heading span {
+    font-size: 4rem;
+  }
+  .about .biography .bio h3 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

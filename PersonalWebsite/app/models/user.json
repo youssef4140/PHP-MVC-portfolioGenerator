@@ -1,0 +1,48 @@
+
+{
+    "personal_info":{
+        "img": "https://picsum.photos/400/600",
+        "firstname": "Youssef",
+        "lastname" : "Metwally",
+        "jobtitle" : "Web Developer",
+        "objective" : "A passionate individual who's Learning to use his knowledge and skills to develop responsive web applications",
+        "biography" : " An engineering graduates with a knack for tech",
+        "email" : "Youssef@example.com",
+        "address" : "1428 Elm Street",
+        "phone" : "1234567890",
+        "age" : "Timeless",
+        "experiencetime" : "-2"
+    },
+    "skills": [
+        "JavaScript",
+        "PHP",
+        "CSS",
+        "HTML",
+        "Python"
+    ],
+    "experience": [
+        {
+            "jobtitle" : "Web Developer",
+            "date" : "(20BC - today)",
+            "location" : "From home",
+            "description" : "been fun"
+        },
+        {
+            "jobtitle" : "Graphic designer",
+            "date" : "(2016 - 2018)",
+            "location" : "here and now",
+            "description" : "Lorem ipsum this is not static smth smth smth"
+        }
+    ],
+    "services": [
+        {
+            "service": "Backend engineer",
+            "description": "Will design and test a RESTful API, Will authorize and authenticate users"
+        },
+        {
+            "service": "frontend engineer",
+            "description": "Will design and build responsive and dynamic web applications"
+        }
+    ]
+    
+}

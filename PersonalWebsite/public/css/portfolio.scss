@@ -1,0 +1,175 @@
+@import "style";
+
+.heading{
+    margin-bottom: 3rem;
+    text-align: center;
+    span{
+        text-transform: uppercase; 
+        font-size:6.5rem;
+        border-bottom:$border-bold ;
+    }
+}
+
+section{
+    padding:3rem 2rem;
+    margin:0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.home{
+    @include flex(row,center);
+    flex-wrap: wrap;
+
+    .image{ 
+        flex:1 1 40rem;
+        img{
+            height:65rem;
+            padding:2rem;
+            border:$border-bold
+        }
+    }
+    .content{
+        flex:1 1 40rem;
+        h3{
+            text-transform:uppercase;
+            font-size: 5rem;
+            margin-bottom: .5rem ;
+        }
+        span{
+            display: inline-block;
+            padding:1rem 2rem;
+            background-color: $primary;
+            font-size: 2rem;
+            margin:1rem;
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 2;
+            padding:1rem ;
+        }
+        a{
+            @include btn()
+        }
+
+    } 
+}
+.about{
+
+    .biography{
+        p{
+            margin:1rem auto;
+            max-width: 70rem;
+            line-height: 1.5;
+            font-size:1.7rem;
+        }
+        .bio{
+            margin-top:1rem;
+            h3{
+                padding:1rem 1.5rem;
+                display:inline-block;
+                margin:1rem;
+                background-color: $bg;
+                border:$border-light;
+                word-break: break-all;
+                font-size: 2.5rem;
+                font-weight:normal;
+                text-transform:none;
+                span{
+                    font-weight: lighter;
+                }
+            }
+        }
+        a{
+            @include btn();
+        }
+    }
+    .skills{
+        margin:3rem 0;
+        .progress{
+            margin-top:1rem;
+        } h3{
+            padding:1rem 1.5rem;
+            display:inline-block;
+            margin:1rem;
+            background-color: $primary;
+            word-break: break-all;
+            font-size: 2.5rem;
+            font-weight:normal;
+            text-transform:none;
+            span{
+                font-weight: lighter;
+                color:$black;
+
+            }
+        }
+    }
+    .edu-exp{
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+            gap:1.5rem;
+            .box-container{
+                flex:1 1 40rem;
+                .box{
+                    text-align: left;
+                    margin: 1.5rem 0;
+                    background-color: $bg;
+                    padding:2rem;
+                    span{
+                        font-size: 1.5rem;
+                    }
+                    h3{
+                        font-size:2.5rem;
+                        font-weight: normal;
+                        margin:1rem;
+                    }
+                    p{
+                        line-height: 2;
+                        font-size: 1.7rem;
+                    }
+                }
+                .title{
+                    padding:1.5rem;
+                    font-size:2rem;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
+.services{
+    .box-container{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(30rem,1fr)) ;
+        gap:1.5rem;
+        align-items: flex-start;
+        .box{
+            padding:3rem 2rem;
+            border:$border-light;
+            p {
+                line-height: 2;
+                font-size: 1.7rem;
+            }
+            i{
+                font-size:6rem;
+                margin-bottom:.5rem
+            }
+            h3{
+                margin:1rem 0;
+                font-size: 2rem;
+                padding:1rem;
+                background-color: $primary;
+            }
+            &:hover{
+                background-color: $black;
+
+            }
+            &:hover i,&:hover p{
+                color:$white;
+            }
+
+        }
+
+    }
+}

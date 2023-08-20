@@ -1,0 +1,157 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap'); 
+
+$black:#000;
+$white:#fff;
+$primary:#ffcc0d;
+$bg:#eee;
+$border-bold:0.7rem solid $black;
+$border-light:0.3rem solid $black;
+@mixin flex($direction,$justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+@mixin btn(){
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding:1rem 3rem;
+    border:$border-light;
+    font-size:2rem;
+    &:hover{
+        background-color: $black;
+        color:$white;
+    }
+}
+
+*{
+    font-family: 'Rubik',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:$black
+}
+*::selection{
+    background-color: $black;
+    color:$primary;
+}
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color:$primary;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    body{
+        overflow: hidden;
+        transition: .2s linear !important;
+    }
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:-35rem;
+    height:100vh;
+    background-color: $white;
+    border-right: $border-bold;
+    width:35rem;
+    padding:3rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: .2s linear !important;
+    text-align: center;
+    #menu-btn{
+        position: absolute;
+        top:0; right:-5.5rem;
+        height:4.5rem;
+        line-height:4.5rem;
+        width:5rem;
+        font-size: 3rem;
+        cursor: pointer;
+        background-color: $black;
+        color:$white;
+        
+    }
+    .logo{
+        text-transform: uppercase;
+        border-bottom: $border-bold;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .navbar{
+        width:100%
+        
+    }
+    .navbar a{
+        display:block;
+        font-size: 2.5rem;
+        padding:1.5rem;
+        margin:.5rem;
+        .active,&:hover{
+            background-color: $primary;
+            color:$white;
+        }
+    }
+    .follow a{
+        font-size: 3rem;
+        margin:0 1rem;
+        cursor:pointer;
+        transition: .6s ease-in-out !important;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+
+}
+.h-active {
+    left:0;
+}
+.b-active{
+    padding-left: 35rem;
+}
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%
+    }
+    .b-active{
+        padding-left:0;
+    }
+}
+@media (max-width:450px){
+    html {
+        font-size: 50%;
+    }
+    .h-active{
+        padding-top:7rem;
+    }
+    #menu-btn.fa-times{
+        right:0;
+    }
+    .home .image img{
+        width:100%;
+        height:auto;
+    }
+    .heading span{
+        font-size: 4rem;
+    }
+    .about .biography .bio h3{
+        font-size: 2rem;
+    }
+}
